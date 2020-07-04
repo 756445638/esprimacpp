@@ -1,10 +1,11 @@
 #include "xhtml_entities.h"
+# pragma warning (disable:936)
 
 map<string, char32_t> XHTMLEntities;
 
 void initXHTMLEntities() {
 	 
-	XHTMLEntities.insert(make_pair("quot",'\u0022'));
+	XHTMLEntities.insert(make_pair("quot", '\u0022'));
     XHTMLEntities.insert(make_pair("amp",'\u0026'));
     XHTMLEntities.insert(make_pair("apos", '\u0027'));
     XHTMLEntities.insert(make_pair("gt",'\u003E'));

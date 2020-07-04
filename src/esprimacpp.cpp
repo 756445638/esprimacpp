@@ -5,9 +5,9 @@
 
 using namespace std;
 
+
 int main()
 {
-	char32_t t = '\u0022';
-	cout << int(t) << endl;
+	x x;
 	return 0;
 }

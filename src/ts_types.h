@@ -1,6 +1,9 @@
 #ifndef TS_TYPES_H
 #define TS_TYPES_H
 
+#include<string>
+
+
 typedef int ts_number;
 using namespace std;
 
@@ -10,16 +13,15 @@ using namespace std;
 	var a string | number
 */
 enum class tsIntersectionTypeKind {
-	Number , String , Null , Reg
+	Number , String , Null , RegExp
 };
 struct  tsIntersectionType
 {
 	tsIntersectionTypeKind  kind;
 	union valueType
 	{
-		std::string s;
+		string s;
 		ts_number  n;
-		
 	}value;
 
 };
